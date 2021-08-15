@@ -1,0 +1,14 @@
+version: '2'
+# uses sample HTML static site from https://startbootstrap.com/themes/agency/
+
+services:
+  proxy:
+    build:
+      context: .
+      dockerfile: nginx.Dockerfile
+    ports:
+      - '80:80'
+  web:
+    image: httpd
+    volumes:
+      - ./html:/usr/local/apache2/htdocs/
