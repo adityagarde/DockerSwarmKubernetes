@@ -1,4 +1,4 @@
-## Assignment: Create A Multi-Service Multi-Node Web App
+## Create A Multi-Service Multi-Node Web App
 
 ### Goal: create networks, volumes, and services for a web-based "cats vs. dogs" voting app.
 Here is a basic diagram of how the 5 services will work:
@@ -45,9 +45,8 @@ Here is a basic diagram of how the 5 services will work:
     - on backend network
     - 1 replica
 
-* Commands mentioned in answers.sh are one way to execute the instructions.
-* The same can be achieved using a stack file (voting-app-stack.yml).
+#### Note -
+- Commands mentioned in answers.sh are one way to execute the instructions.
+- The same can be achieved using a stack file (voting-app-stack.yml).
 
-    ```shell
-        docker stack deploy -c voting-app-stack.yml voteapp
-    ```
+  `docker stack deploy -c voting-app-stack.yml voteapp`
