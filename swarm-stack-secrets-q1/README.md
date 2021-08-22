@@ -15,8 +15,8 @@
 
 ```yaml
   secrets:
-	psql-pw:
-	  external: true
+    psql-pw:
+      external: true
 ```
 
 - These commands will run the compose file written for the swarm.
